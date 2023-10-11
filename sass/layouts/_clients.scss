@@ -1,0 +1,99 @@
+.clients-list-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Media query for screens up to 480px */
+@media screen and (max-width: 480px) {
+    .clients-menu {
+        justify-content: space-between;
+        /* Arrange items with space between them */
+    }
+
+    .clients-menu-item {
+        width: calc(50% - 15px);
+        /* Display two items in one row with 15px gap between them */
+    }
+}
+
+/* Media query for screens from 481px to 767px */
+@media screen and (min-width: 481px) and (max-width: 767px) {
+    .clients-menu-item {
+        width: 226px;
+    }
+}
+
+/* Media query for screens from 768px to 1199px */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .clients-menu-item {
+        width: 226px;
+    }
+}
+
+/* Media query for screens 1200px and above */
+@media screen and (min-width: 1200px) {
+    .clients-list-section {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    .clients-subtitle {
+        font-size: 36px;
+        line-height: 1.17;
+        margin-bottom: 50px;
+    }
+
+    .clients-menu-item {
+        width: 170px !important;
+    }
+}
+
+.clients-subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.18;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.clients-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.clients-menu-item {
+    width: 210px;
+    height: 92px;
+    flex-shrink: 0;
+}
+
+.clients-menu-icon {
+    fill: #AFB1B8;
+}
+
+.link-company-site {
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transition: border-color var(--transition);
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+        cursor: pointer;
+    }
+
+    &:hover .clients-menu-icon,
+    &:focus .clients-menu-icon {
+        fill: var(--accent-color);
+    }
+}
+
+.clients-menu-icon {
+    transition: fill var(--transition);
+}

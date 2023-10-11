@@ -1,0 +1,32 @@
+.social-menu-list {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: inherit;
+    border-radius: 50%;
+    transition: background-color var(--transition);
+
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+    }
+
+    &:hover .social-menu-icon,
+    &:focus .social-menu-icon {
+        fill: white;
+    }
+}
+
+.social-menu-icon {
+    fill: #AFB1B8;
+    transition: fill var(--transition);
+}
